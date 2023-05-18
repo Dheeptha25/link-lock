@@ -1,0 +1,82 @@
+h1{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+body{
+    background-image: url(img/gradient-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+
+.form{
+    width: 50%;
+    background-color: #025464;
+    padding: 20px;
+}
+
+button{
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    background-color: white;
+    text-transform: uppercase;
+    border: 2px solid teal;
+    border-radius: 5%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+  }
+  
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea, select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label{
+    color:white;
+    font-family: 'Comfortaa', cursive;
+    font-weight:bolder;
+    text-transform:capitalize;
+    font-size:20px;
+  }
+
+  .output{
+    width: 50%;
+    background-color: #1B9C85;
+    padding: 20px;
+  }
+
+  summary{
+    color:white;
+    font-family: 'Comfortaa', cursive;
+    font-weight:bolder;
+    text-transform:capitalize;
+    font-size:20px;
+  }

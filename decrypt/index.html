@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <!-- Metadata -->
+  <meta charset="utf-8" />
+  <meta name="description" content="Password protect links using AES in the browser." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Luckiest+Guy&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+  <title>Decrypt Link Lock URLs</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="../b64.js"></script>
+  <script type="text/javascript" src="../api.js"></script>
+  <script type="text/javascript" src="decrypt.js"> </script>
+</head>
+
+<body onload="main()">
+  <div class="main">
+    <div class="form">
+      <label for="encrypted-url">encrypted url</label>
+      <input type="url" id="encrypted-url" oninput="document.querySelector('.alert').style.opacity = 0" />
+      <label for="password">password</label>
+      <input type="password" id="password" />
+      <button onclick="onDecrypt()">Decrypt</button>
+      <p class="alert">INVISIBLE</p>
+    </div> 
+    <!-- Output area -->
+    <div class="output">
+      <label for="output">output</label>
+      <input type="text" id="output" readonly/>
+      <button id="copy" onclick="onCopy('output')">Copy</button>
+      <a href="" id="open" target="_blank"><button>Open in New Tab</button></a>
+      <p class="alert" id="copy-alert">Copied</p>
+    </div>
+  </div>
+ 
+</body>
+</body>
+
+</html>

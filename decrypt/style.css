@@ -1,0 +1,80 @@
+body{
+    background-image: url(img/gradient-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form{
+    width: 50%;
+    background-color: #643843;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+
+button{
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    background-color: white;
+    text-transform: uppercase;
+    border: 2px solid teal;
+    border-radius: 5%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+  }
+  
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea, select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label{
+    color:white;
+    font-family: 'Comfortaa', cursive;
+    font-weight:bolder;
+    text-transform:capitalize;
+    font-size:20px;
+  }
+
+  .output{
+    width: 50%;
+    background-color: #1D267D;
+    padding: 20px;
+  }
+
+  p{
+    color:white;
+    font-family: 'Comfortaa', cursive;
+    font-weight:bolder;
+    text-transform:capitalize;
+    font-size:20px;
+  }

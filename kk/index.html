@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="date" content="2021-03-12" />
+  <meta name="dcterms.date" content="2021-03-12" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Luckiest+Guy&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<h2 id="create-a-hidden-bookmark-knock-sequence">Create a Hidden Bookmark Knock Sequence</h2>
+<p>Enter a link to hide. Click “Add a step” to add an additional bookmark to the knock sequence. For each “Knock sequence step,” input where the bookmark should go if the knock sequence is incorrect or incomplete.</p>
+<style>
+.contact-form {
+  height: auto;
+  padding-bottom: 0;
+}
+
+.output-bookmarks {
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.generated {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  line-height: 3;
+}
+
+.generated li {
+  display: inline-block;
+  text-align: center;
+  flex: 0.15;
+}
+
+.generated li a {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+</style>
+<script src="b64.js"></script>
+<script src="api.js"></script>
+<script src="create.js"></script>
+<div class="main">
+  <form class="contact-form" id="main-form" onsubmit="return false;" method="post">
+    <label>Link to hide</label> <input id="hidden-url" type="url" />
+    <hr>
+    <br>
+    <div class="bookmarks">
+    <label>Knock sequence step</label> <input type="url" class="bookmark" /> <label>Knock sequence step</label> <input type="url" class="bookmark" />
+    </div>
+    <div>
+    <button onclick="generateBookmarks()">Generate bookmarks</button> <button onclick="addBookmark()">Add a step</button> <button onclick="fillRandom()">Use random pages</button>
+    </div>
+    <p id="alert" class="alert">
+    </p>
+    <div class="output-bookmarks">
+    <p>
+    Drag the generated bookmarks to your bookmarks bar. Their default names are the order in which to click them, but they should be renamed.
+    </p>
+    <ul class="generated" id="generated">
+    </ul>
+    </div>
+    </form>
+    
+</div>
+</body>
+</html>
